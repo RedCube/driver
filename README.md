@@ -8,9 +8,9 @@ The solution is based on redis, and useing the following separation :
 MAIN -> META (OPTIONS)
 
 Redis Instances (when dealing with a specified datawarehouse) :
--> DATAWARE HOUSE (FACTS)
--> DIMENSIONS (INDEXES
--> CUBES (AGGREGATES)
+- DATAWARE HOUSE (FACTS)
+- DIMENSIONS (INDEXES
+- CUBES (AGGREGATES)
 
 
 Each instance could be on a dedicated server, or on the same server 
@@ -18,6 +18,7 @@ with a dedicated database number, or on the same server & the same database.
 
 # Data structures :
 
+```
 MAIN
  |
  `- GROUPS
@@ -32,6 +33,7 @@ MAIN
            `- MEASURES
            `- (FACTS REFERENCES)
            `- (DIMENSION REFERENCES)
+```
 
 # The Meta Options (and storage notions) :
 
