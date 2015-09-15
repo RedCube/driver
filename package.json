@@ -1,0 +1,21 @@
+{
+  "name": "redcube",
+  "version": "1.0.0",
+  "description": "MOLAP Engine based on Redis and NodeJS",
+  "main": "src/driver.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha ./test/",
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha ./test/"
+  },
+  "author": "Ioan CHIRIAC",
+  "license": "BSD3",
+  "dependencies": {
+    "ioredis": "^1.7.3",
+    "moment": "^2.10.6"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.0.1"
+  }
+}
